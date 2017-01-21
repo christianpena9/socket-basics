@@ -5,6 +5,5 @@ socket.on('connect', function() {
 });
 
 socket.on('message', function(message) {
-    console.log('New Message:');
-    console.log(message.text);
+    console.log('New Message: ' + message.text);
 });
