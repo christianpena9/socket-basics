@@ -15,7 +15,7 @@ io.on('connection', function(socket) {
         //io.emit sends the data to everyone, including the sender
 
         //broadcast.emit sends the date just to everyone
-        socket.broadcast.emit('message', message);
+        io.emit('message', message);
     });
 
     socket.emit('message', {
