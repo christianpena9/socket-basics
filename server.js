@@ -14,10 +14,10 @@ io.on('connection', function(socket) {
 
     socket.on('message', function(message) {
         console.log('Message Recieved: ' + message.text);
-        console.log('Message Timestamp: ' + message.timestamp);
         //io.emit sends the data to everyone, including the sender
 
         message.timestamp = moment().valueOf();
+        console.log('Message Timestamp: ' + message.timestamp);
         //broadcast.emit sends the date just to everyone
         io.emit('message', message);
     });
