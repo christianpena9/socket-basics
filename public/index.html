@@ -1,20 +1,67 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Socket.io Basics</title>
-    </head>
-    <body>
-        <h1>Join Chat</h1>
 
+<head>
+    <meta charset="utf-8">
+    <title>Socket.io Basics</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="vertical-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 well">
+                    <h1>Join Chat</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="">Display Name</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                </span>
+                                <input type="text" clas="name" class="form-control" id="" placeholder="ex. christianpena9" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Room Name</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-comment"></i>
+                                </span>
+                                <input type="text" name="room" class="form-control" id="" placeholder="ex. LOL Fans" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Join Chat" class="btn btn-primary btn-block" \>
+                        </div>
+
+                        <!--<button type="submit" class="btn btn-default">Submit</button>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
         <form action="/chat.html">
-            <label for="">Display Name</label>
-            <input type="text" name="name" placeholder="ex. christianpena9" \><br>
+            <div class="form-group">
+                <label for="name">Display Name</label>
+                <input type="text" name="name" placeholder="ex. christianpena9" id="name" />
+            </div>
 
-            <label for="">Room Name</label>
-            <input type="text" name="room" placeholder="ex. LOL Fans"><br>
-            
+            <div class="form-group">
+                <label for="">Room Name</label>
+                <input type="text" name="room" placeholder="ex. LOL Fans" /><br>
+            </div>
+
             <input type="submit" value="Join Chat" \>
         </form>
-    </body>
+-->
+
+</body>
+
 </html>
